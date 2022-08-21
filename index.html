@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Space App</title>
+  </head>
+  <style type="text/css">
+    .section__tech {
+      background-image: url(./img/technology/background-technology-desktop.jpg);
+    }
+    @media only screen and (max-width: 425px) {
+      .home__wrap {
+        background-image: url(./img/home/background-home-mobile.jpg);
+      }
+    }
+    @media only screen and (max-width: 425px) {
+      .section__tech {
+        background-image: url(./img/technology/background-technology-mobile.jpg);
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="home__wrap page__active">
+        <div class="home__container">
+          <div class="home__description">
+            <p class="homep1">SO, YOU WANT TO TRAVEL TO</p>
+            <h1>SPACE</h1>
+            <p class="homep2">
+              Let’s face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we’ll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+          <div class="explore">EXPLORE</div>
+        </div>
+      </div>
+      <section class="section__destination">
+        <div class="destination__container">
+          <div class="destination__body">
+            <h2 class="destination__pick">
+              <span>01</span>PICK YOUR DESTINATION
+            </h2>
+            <div class="destination__destinations">
+              <ul class="destination__nav">
+                <li class="destination__nav-item nav__list-item desnav__active">
+                  MOON
+                </li>
+                <li class="destination__nav-item nav__list-item">MARS</li>
+                <li class="destination__nav-item nav__list-item">EUROPA</li>
+                <li class="destination__nav-item nav__list-item">TITAN</li>
+              </ul>
+              <h1 class="destination__name">MOON</h1>
+              <p class="des__description">
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
+              </p>
+              <div class="des__footer">
+                <div class="des__foot-1">
+                  <p>AVG. DISTANCE</p>
+                  <h2>384,400 KM</h2>
+                </div>
+                <div class="des__foot-2">
+                  <p>EST. TRAVEL TIME</p>
+                  <h2>3 DAYS</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__crew">
+        <div class="crew__container">
+          <div class="crew__body">
+            <h2 class="crew__meet"><span>02 </span>MEET YOUR CREW</h2>
+            <h3 class="crew__occ">COMMANDER</h3>
+            <h3 class="crew__name">DOUGLAS HOURLEY</h3>
+            <p class="crew__disc">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps
+              pilot and former NASA astronaut. He launched into space for the
+              third time as commander of Crew Dragon Demo-2.
+            </p>
+            <div class="dots">
+              <div class="dots1 dot__active dot" data-slide="0"></div>
+              <div class="dots2 dot" data-slide="1"></div>
+              <div class="dots3 dot" data-slide="2"></div>
+              <div class="dots4 dot" data-slide="3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__tech">
+        <div class="technology__container">
+          <h2 class="tech__top-text"><span>03</span> SPACE LAUNCH 101</h2>
+          <img
+            src="./img/technology/image-launch-vehicle-landscape.jpg"
+            alt="landscape"
+            class="tech__img-mobile"
+          />
+          <div class="tech__main">
+            <ul class="tech__num">
+              <li class="tech__num-item tech__active">1</li>
+              <li class="tech__num-item">2</li>
+              <li class="tech__num-item">3</li>
+            </ul>
+            <div class="tech__desc">
+              <p class="tech__terminology">THE TERMINOLOGY...</p>
+              <h2 class="tech__name">LAUNCH VEHICLE</h2>
+              <p class="tech__desc-body">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+            </div>
+            <img
+              class="tech__img"
+              src="./img/technology/image-launch-vehicle-portrait.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <img src="./img/shared/icon-close.svg" alt="close" class="close" />
+      <img src="./img/shared/icon-hamburger.svg" alt="open" class="open" />
+      <div class="nav__mob">
+        <ul class="nav__list nav__list-mobile">
+          <li class="nav__list-item nav__list-item-mobile" data-slide="0">
+             HOME
+          </li>
+          <li class="nav__list-item nav__list-item-mobile" data-slide="1">
+            DESTINATION
+          </li>
+          <li class="nav__list-item nav__list-item-mobile" data-slide="2">
+            CREW
+          </li>
+          <li class="nav__list-item nav__list-item-mobile" data-slide="3">
+            TECHNOLOGY
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__container">
+        <div class="nav__section">
+          <img src="./img/shared/logo.svg" alt="logo" class="nav__logo" />
+          <ul class="nav__list">
+            <li class="nav__list-item main__nav" data-slide="0">
+              <span>00 </span> HOME
+            </li>
+            <li class="nav__list-item main__nav" data-slide="1">
+              <span>01 </span> DESTINATION
+            </li>
+            <li class="nav__list-item main__nav" data-slide="2">
+              <span>02 </span> CREW
+            </li>
+            <li class="nav__list-item main__nav" data-slide="3">
+              <span>03 </span> TECHNOLOGY
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
